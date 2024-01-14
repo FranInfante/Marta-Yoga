@@ -10,13 +10,25 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 20px;
+    background-color: beige;
     text-align: center;
+    padding: 30px;
 }
 
 nav {
     height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+nav img {
+    width: 400px;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
 }
 
 nav ul {
@@ -42,18 +54,72 @@ nav ul li a {
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
+    font-size: larger;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8b735b; /* Muted or darker brown color for hover */
 }
 
 main {
     flex: 1; /* Allow main content to grow and take available space */
 }
 
+
+
+main .intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+main .intro-content {
+    display: flex;
+    align-items: center;
+}
+
+main .intro img {
+    width: 30%;
+    border-radius: 10%;
+    margin-right: 20px; /* Add some separation to the right */
+    padding: 30px;
+}
+
+main .intro .text-content {
+    max-width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+}
+
+main .intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+main .intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+main .intro h2 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+
 .container {
     width: 85vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    margin: auto; /* Center the container */
     overflow: hidden;
     border: 20px solid #ffffff;
     border-radius: 8px;
@@ -63,7 +129,7 @@ main {
 .wrapper {
     width: 100%; 
     display: flex;
-    animation: slide 16s infinite; /* Adjusted animation duration to 16s */
+    animation: slide 16s infinite; 
 }
 
 @keyframes slide {
@@ -97,8 +163,25 @@ img {
     width: 100%; /* Set to 25% to display one image at a time */
 }
 
+.join {
+    text-align: center;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+    transition: color 0.3s ease;
+}
+
+.join a {
+    text-decoration: none !important;
+    color: #333;
+
+}
+
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f8f8f8;
+    background-color: beige;
 }
