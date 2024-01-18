@@ -6,28 +6,31 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    min-height: 100vh;
+    /* Ensure the body takes at least the full height of the viewport */
 }
 
 header {
     background-color: beige;
-    padding: 10px;
+    padding: 2%;
 }
 
 nav {
-    height: 75px;
+    height: 5%;
     display: flex;
     align-items: center;
-    overflow: hidden; /* Hide content that exceeds the container */
+    overflow: hidden;
+    /* Hide content that exceeds the container */
 }
 
 nav img {
-    width: auto; /* Set to auto to maintain aspect ratio */
-    max-width: 100%; /* Ensure the image doesn't exceed the width of the nav */
-    max-height: 100%; /* Ensure the image doesn't exceed the height of the nav */
-    height: auto; /* Allow the height to adjust based on the max-height constraint */
-    margin-left: 0; /* Adjust margin as needed */
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-left: 0;
     transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
 nav ul {
@@ -40,10 +43,6 @@ nav ul {
     height: 100%;
 }
 
-nav ul li {
-    display: inline-flex;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -51,13 +50,13 @@ nav ul li a {
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
-    font-size: larger;
+    font-size: 1rem;
     transition: color 0.3s ease;
-    width: 100px;
+    width: auto;
 }
 
 nav ul li a:hover {
-    color: #8b735b; /* Muted or darker brown color for hover */
+    color: #8b735b;
 }
 
 nav ul li a.navlist {
@@ -66,10 +65,8 @@ nav ul li a.navlist {
 }
 
 main {
-    flex: 1; /* Allow main content to grow and take available space */
+    flex: 1;
 }
-
-
 
 main .intro {
     display: flex;
@@ -84,13 +81,13 @@ main .intro-content {
 
 main .intro img {
     width: 30%;
-    border-radius: 10%;
-    margin-right: 20px; /* Add some separation to the right */
-    padding: 30px;
+    border-radius: 20px; 
+    padding: 0px;
+    margin: auto;
 }
 
 main .intro .text-content {
-    max-width: 50%; /* Adjust the width as needed */
+    max-width: 50%;
     padding: 20px;
 }
 
@@ -111,7 +108,6 @@ main .intro p {
     margin-bottom: 20px;
     font-style: italic;
     font-weight: bold;
-    
 }
 
 main .intro h2 {
@@ -119,26 +115,24 @@ main .intro h2 {
     margin-top: 30px;
 }
 
-
 .container {
     width: 85vmin;
-    margin: auto; /* Center the container */
+    margin: auto;
     overflow: hidden;
     border: 20px solid #ffffff;
-    border-radius: 8px;
+    border-radius: 20px; 
     box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
-
 }
 
 .wrapper {
     width: 100%;
     display: flex;
     animation: slide 16s infinite;
-    justify-content: flex-start; /* Align the content to the left */
+    justify-content: flex-start;
 }
 
 @keyframes slide {
-    0%{
+    0% {
         transform: translateX(0);
     }
     25% {
@@ -165,7 +159,7 @@ main .intro h2 {
 }
 
 img {
-    width: 100%; /* Set to 25% to display one image at a time */
+    width: 100%;
 }
 
 .join {
@@ -182,7 +176,6 @@ img {
 .join a {
     text-decoration: none !important;
     color: #333;
-
 }
 
 footer {
@@ -191,7 +184,7 @@ footer {
     background-color: beige;
 }
 
-/* Add this at the end of your existing CSS */
+/* Hamburger menu styles */
 .hamburger-menu {
     display: none;
     background: none;
@@ -204,72 +197,31 @@ footer {
     padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
-        background-color: beige;
-        z-index: 1;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav ul li {
-        display: inline-block;
-        text-align: center;
-        margin: 10px ;
-    }
-
-    nav img {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 769px) {
+/* Nav styles for larger screens */
+@media screen and (min-width: 1121px) {
     .hamburger-menu {
         display: none;
     }
-
     nav ul {
         display: flex;
     }
-
     nav ul li {
         display: inline;
         margin-right: 20px;
     }
-
     nav img {
         display: inline;
     }
+    nav img.stretched-logo {
+        display: none;
+    }
 }
 
-/* Add this at the end of your existing CSS */
-@media screen and (max-width: 768px) {
+/* Nav styles for smaller screens */
+@media screen and (max-width: 1120px) {
     .hamburger-menu {
         display: block;
     }
-
     nav ul {
         display: none;
         flex-direction: column;
@@ -280,22 +232,69 @@ nav ul {
         background-color: beige;
         z-index: 1;
     }
-
     nav ul.show {
         display: flex;
     }
-
     nav ul li {
-        display: block;
+        display: inline-block;
         text-align: center;
         margin: 10px;
     }
+    nav img {
+        width: 70%;
+    }
+}
 
+/* Nav styles for even smaller screens */
+@media screen and (max-width: 768px) {
+    main .intro {
+        margin-bottom: 50px;
+    }
+    main .intro-content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+    }
+    main .intro img {
+        border-radius: 20px; 
+        width: 70%;
+        
+        margin: auto;
+        padding: 5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: none; /* Ensure no border */
+        padding: 0;   /* Ensure no padding */
+    }
+    main .intro .text-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+    main .intro h1 {
+        font-size: 25px;
+    }
+    main .intro p {
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main .intro h2 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* Nav styles for hiding elements in dropdown menu */
+@media screen and (max-width: 1120px) {
     nav img.regular-logo {
         display: none;
     }
-    
-
     nav img.stretched-logo {
         display: inline;
         width: 100px;
@@ -303,110 +302,16 @@ nav ul {
     }
 }
 
-nav .stretcheda {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-    }
-
-@media screen and (min-width: 769px) {
-    .hamburger-menu {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
+/* Show regular logo and li when more than 1120px */
+@media screen and (min-width: 1121px) {
     nav ul li {
         display: inline;
         margin-right: 20px;
     }
-
-    nav img.regular-logo {
-        display: none;
-    }
-
-    nav img.stretched-logo {
-        display: inline;
-    }
-    
-    
-    
-}
-
-@media screen and (min-width: 1200px) {
     nav img.regular-logo {
         display: inline;
     }
-
     nav img.stretched-logo {
         display: none;
     }
-    nav .stretcheda {
-        display: none;
-        width: 100%;
-        
-        }
 }
-
-.regulara {
-    text-align: center; /* Center the content horizontally */
-    /* Center the content horizontally (alternative method) */
-}
-
-.regulara img.regular-logo {
-    
-    width: 100%;
-    height: auto;
-
-}
-
-ul li {
-
-padding: 50px;
-}
-
-@media screen and (max-width: 768px) {
-    main .intro {
-        margin-bottom: 50px; /* Adjust margin for smaller screens */
-    }
-
-    main .intro-content {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        text-align: center; /* Center text content */
-    }
-
-    main .intro img {
-        width: 70%; /* Adjust image width for better responsiveness */
-        margin-right: 0; /* Remove right margin for better spacing */
-        padding: 0px; /* Reduce padding for better spacing */
-        margin-top: 15px;
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    }
-
-    main .intro .text-content {
-        max-width: 100%; /* Full width for text content on smaller screens */
-        padding: 20px; /* Adjust padding for better spacing */
-    }
-
-    main .intro h1 {
-        font-size: 25px; /* Adjust heading font size for smaller screens */
-    }
-
-    main .intro p {
-        font-size: 13px; /* Adjust paragraph font size for smaller screens */
-        margin-bottom: 10px; /* Adjust margin for better spacing */
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    main .intro h2 {
-        font-size: 17px; /* Adjust secondary heading font size for smaller screens */
-        margin-top: 20px; /* Adjust margin for better spacing */
-    }
-}
-
-
-

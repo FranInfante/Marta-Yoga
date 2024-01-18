@@ -40,3 +40,22 @@ Integración con Plataformas de Pago:
 Facilitar el pago en línea para reservas y servicios adicionales.
 Traducciones:
 Proporcionar traducciones a diferentes idiomas para llegar a un público más amplio.
+```
+Marta-Yoga
+├─ css
+│  └─ style.css
+├─ imgs
+│  ├─ cuatro.jpg
+│  ├─ dos.jpg
+│  ├─ Foto Marta Infante.jpeg
+│  ├─ Logosimple.png
+│  ├─ Logoynombre.png
+│  ├─ tres.jpg
+│  └─ uno.JPG
+├─ js
+│  └─ script.js
+├─ pages
+│  └─ index.html
+└─ README.md
+
+```
