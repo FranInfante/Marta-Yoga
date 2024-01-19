@@ -10,6 +10,29 @@ document.addEventListener('DOMContentLoaded', function () {
         navItems.forEach(item => {
             item.style.display = navList.classList.contains('show') ? 'block' : 'none';
         });
+
+        // Toggle the active class for the clicked item
+        navItems.forEach(item => {
+            item.classList.remove('active');
+        });
+    });
+
+    // Handle click on nav items
+    navItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // Remove the 'active' class from all items
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add the 'active' class to the clicked item
+            this.classList.add('active');
+
+            // If the window width is less than 1120px, close the menu after clicking
+            if (window.innerWidth <= 1120) {
+                navList.classList.remove('show');
+            }
+        });
     });
 
     // Check the window width on resize and remove the 'show' class if it's larger than 1120px
