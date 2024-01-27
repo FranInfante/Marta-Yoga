@@ -47,3 +47,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector("header");
+    var imgsnavbar = document.querySelector(".imgsnavbar");
+    var navlist = document.querySelector(".navlist");
+
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0) {
+            header.classList.add("shrink");
+            imgsnavbar.classList.add("shrink");
+            navlist.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
+            imgsnavbar.classList.remove("shrink");
+            navlist.classList.remove("shrink");
+        }
+    });
+});
+
+
+
+

@@ -1,3 +1,4 @@
+/* Reset default styles for the body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fff;
@@ -6,53 +7,77 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    /* Ensure the body takes at least the full height of the viewport */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
+/* Header styles */
 header {
-    background-color: transparent;
+    background-color: beige;
     padding: 1px;
     border-bottom: #333 1px solid;
     position: fixed;
     width: 100%;
-}
-
-div.imgsnavbar {
-    height: 100px;
-
-
-}
-
-nav {
-    height: 5%;
-    display: flex;
+    height: 14%; /* Set initial height to 20% or any desired value */
+    transition: background-color 1.0s ease, height 1.0s ease; /* Add transition for height */
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    /* Hide content that exceeds the container */
+    display: flex;
 }
 
+/* Styles for the header when it shrinks */
+header.shrink {
+    border-bottom: 0px;
+    background-color: transparent;
+    height: 12%; /* Adjust the height as needed */
+}
+
+/* Styles for the images and links in the header */
+
+
+/* Navigation styles */
+nav {
+    height: 80%; /* Match the height with the header in the .shrink state */
+    display: flex;
+    align-items: center; /* Center the li elements vertically */
+    overflow: hidden; /* Hide content that exceeds the container */
+}
+
+/* Styles for navigation images */
 nav img {
-    width: 100%;
+    width: 35%;
     max-width: 100%;
     max-height: 100%;
     height: auto;
-    margin-left: 0;
-    transition: transform 0.3s ease;
+    margin-left: 10%;
     object-fit: cover;
+    transition: transform 1.7s ease, width 1.7s ease;
 }
 
+header.shrink .imgsnavbar img {
+    width: 20%;
+    transition: transform 1.7s ease, 1.7s ease;
+}
+
+/* Styles for navigation ul (unordered list) */
 nav ul {
     list-style-type: none;
     margin-left: auto;
+    margin-right: 10%;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: center; /* Center the li elements vertically */
     height: 100%;
-
 }
 
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%; 
+    margin-right: 20%;/* Adjust the margin for spacing between list items */
+}
+
+/* Styles for navigation list items */
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -61,25 +86,33 @@ nav ul li a {
     font-weight: bolder;
     font-style: normal;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: transform 1.7s ease, width 1.7s ease, font-size 1.7s ease; /* Adjust transition duration */
     width: auto;
-
 }
 
+/* Header shrink state for list items */
+header.shrink a {
+    font-size: 15px;
+    transition: transform 1.7s ease, width 1.7s ease, font-size 1.7s ease; /* Adjust transition duration */
+}
+
+/* Hover effect for navigation list items */
 nav ul li a:hover {
     color: #f5aaaa;
 }
 
+/* Additional styling for specific navigation list items */
 nav ul li a.navlist {
-    width: 140px;
-    padding-right: 20px;
+    width: 10%;
 }
 
+/* Main content styles */
 main {
     flex: 1;
     padding-top: 80px;
 }
 
+/* Styles for the introductory section */
 main .intro {
     display: flex;
     justify-content: center;
@@ -87,20 +120,23 @@ main .intro {
     margin-top: 2%;
 }
 
+/* Styles for the content within the introductory section */
 main .intro-content {
     display: flex;
     align-items: center;
 }
 
+/* Styles for the introductory image */
 main .intro img {
     width: 30%;
     border-radius: 20px;
     padding: 0px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border: none;
+    border: none;
 }
 
+/* Styles for the text content within the introductory section */
 main .intro .text-content {
     max-width: 50%;
     padding: 20px;
@@ -108,6 +144,7 @@ main .intro .text-content {
     justify-content: center;
 }
 
+/* Styles for the introductory heading */
 main .intro h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -118,6 +155,7 @@ main .intro h1 {
     transition: color 0.3s ease;
 }
 
+/* Styles for the introductory paragraph */
 main .intro p {
     font-size: 18px;
     line-height: 1.5;
@@ -127,13 +165,13 @@ main .intro p {
     font-weight: bold;
 }
 
+/* Styles for the secondary heading within the introductory section */
 main .intro h2 {
     font-size: 24px;
     margin-top: 30px;
 }
 
-
-
+/* Container styles */
 .container {
     width: 85vmin;
     margin: auto;
@@ -143,6 +181,7 @@ main .intro h2 {
     box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Wrapper styles for animation */
 .wrapper {
     width: 100%;
     display: flex;
@@ -150,6 +189,7 @@ main .intro h2 {
     justify-content: flex-start;
 }
 
+/* Keyframes for the slide animation */
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -170,12 +210,14 @@ main .intro h2 {
     100% {
         transform: translateX(0); /* Return to the first slide at the end */
     }
-    
 }
+
+/* Image styles */
 img {
     width: 100%;
 }
 
+/* Join section styles */
 .join {
     text-align: center;
     padding: 10px;
@@ -187,11 +229,13 @@ img {
     transition: color 0.3s ease;
 }
 
+/* Join section link styles */
 .join a {
     text-decoration: none !important;
     color: #333;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -209,9 +253,11 @@ footer {
     top: 20px;
     right: 20px;
     padding: 10px;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
-/* Nav styles for larger screens */
+/* Larger screen navigation styles */
 @media screen and (min-width: 1121px) {
     .hamburger-menu {
         display: none;
@@ -235,14 +281,13 @@ footer {
     }
 }
 
-/* Nav styles for smaller screens */
+/* Smaller screen navigation styles */
 @media screen and (max-width: 1120px) {
     .hamburger-menu {
         display: block;
     }
 
     nav ul {
-        
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -253,7 +298,7 @@ footer {
         z-index: 1;
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.3s ease, width 0.3s ease; /* Added width transition */
+        transition: max-height 3.7s ease, width 0.7s ease, opacity 0.7s ease 0.2s; /* Added delay for opacity transition */
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
     }
 
@@ -266,6 +311,12 @@ footer {
         display: inline-block;
         text-align: center;
         margin: 8px 10px;
+        opacity: 0; /* Initially set the opacity to 0 */
+        transition: opacity 0.7s ease; /* Adjust opacity transition */
+    }
+
+    nav ul.show li {
+        opacity: 1; /* Fade in the list items when the menu is shown */
     }
 
     nav img {
@@ -273,8 +324,21 @@ footer {
     }
 }
 
+
 /* Nav styles for even smaller screens */
 @media screen and (max-width: 1000px) {
+
+    
+
+    main{
+
+        margin-top: 7%;
+
+    }
+
+   
+
+
     main .intro {
         margin-bottom: 50px;
     }
@@ -291,10 +355,8 @@ footer {
         margin: auto;
         padding: 5%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border: none;
-        /* Ensure no border */
-        padding: 0;
-        /* Ensure no padding */
+        border: none; /* Ensure no border */
+        padding: 0; /* Ensure no padding */
     }
 
     main .intro .text-content {
@@ -332,12 +394,10 @@ footer {
         display: flex;
         align-items: center; /* Align items vertically */
         justify-content: center; /* Add space between items */
-        height: 5%;
+       
         overflow: hidden;
-        
     }
    
-    
     nav img.regular-logo {
         display: none;
     }
