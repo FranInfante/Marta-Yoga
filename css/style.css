@@ -21,6 +21,7 @@ header {
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 2;
 }
 
 /* Styles for the header when it shrinks */
@@ -39,6 +40,7 @@ nav {
     display: flex;
     align-items: center; /* Center the li elements vertically */
     overflow: hidden; /* Hide content that exceeds the container */
+    
 }
 
 /* Styles for navigation images */
@@ -172,12 +174,9 @@ main .intro h2 {
 
 /* Container styles */
 .container {
-    width: 85vmin;
-    margin: auto;
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    border: 5px solid #ffffff;
-    border-radius: 20px;
-    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Wrapper styles for animation */
@@ -186,6 +185,7 @@ main .intro h2 {
     display: flex;
     animation: slide 16s infinite;
     justify-content: flex-start;
+    z-index: 1;
 }
 
 /* Keyframes for the slide animation */
