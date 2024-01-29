@@ -62,7 +62,6 @@ header.shrink .imgsnavbar img {
 /* Styles for navigation ul (unordered list) */
 nav ul {
     list-style-type: none;
-    margin-left: auto;
     margin-right: 10%;
     padding: 0;
     display: flex;
@@ -110,7 +109,6 @@ nav ul li a.navlist {
 /* Main content styles */
 main {
     flex: 1;
-    padding-top: 80px;
 }
 
 /* Styles for the introductory section */
@@ -274,23 +272,24 @@ footer {
     }
 
     nav ul {
+        margin-right: 0;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 86px;
-        right: 0;
-        width: 200px; /* Set the desired width */
+        top: 90px;
+        width: 100%; /* Set the desired width */
         background-color: white;
         z-index: 1;
         overflow: hidden;
         max-height: 0;
-        transition: max-height 3.7s ease, width 0.7s ease, opacity 0.7s ease 0.2s; /* Added delay for opacity transition */
+        transition: max-height 0.9s ease, width 0.7s ease, opacity 0.7s ease 0.2s; /* Added delay for opacity transition */
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
     }
 
     nav ul.show {
         max-height: 500px;
-        width: 200px; /* Adjust the width for the expanded menu */
+        width: 100%; /* Adjust the width for the expanded menu */
+        transition: max-height 4s ease, width 1s ease, opacity 1s ease 0.5s;
     }
 
     nav ul li {
@@ -298,7 +297,7 @@ footer {
         text-align: center;
         margin: 8px 10px;
         opacity: 0; /* Initially set the opacity to 0 */
-        transition: opacity 0.7s ease; /* Adjust opacity transition */
+        transition: opacity 1.7s ease; /* Adjust opacity transition */
     }
 
     nav ul.show li {
@@ -357,6 +356,7 @@ footer {
         font-size: 17px;
         margin-top: 20px;
     }
+   
 
     nav ul li {
         display: block;
@@ -418,6 +418,8 @@ nav ul li.active {
     background-color: #8b735b; /* Set the background color for the active state */
     color: #fff; /* Set the text color for the active state */
 }
+
+
 .menu {
     background-color: transparent;
     border: none;
