@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.querySelector('.hamburger-menu');
+    const menuButton = document.querySelector('.menu');
     const navList = document.querySelector('nav ul');
     const navItems = document.querySelectorAll('nav ul li');
 
@@ -65,7 +65,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-
-
-
