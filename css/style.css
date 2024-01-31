@@ -26,7 +26,7 @@ header {
 
 /* Styles for the header when it shrinks */
 header.shrink {
-    height: 50px;
+    height: 60px;
     border-bottom: 0px;
     background-color: transparent;
      /* Adjust the height as needed */
@@ -73,7 +73,8 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center; /* Center the li elements vertically */
-    height: 100%;
+    
+   
 }
 
 nav ul li {
@@ -288,7 +289,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 45px;
         width: 100%; /* Set the desired width */
         background-color: white;
         z-index: 1;
