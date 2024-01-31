@@ -26,6 +26,7 @@ header {
 
 /* Styles for the header when it shrinks */
 header.shrink {
+    height: 50px;
     border-bottom: 0px;
     background-color: transparent;
      /* Adjust the height as needed */
@@ -44,7 +45,7 @@ nav {
 }
 nav div.imgsnavbar{
 
-width: 40%
+width: 40%;
 
 }
 
@@ -60,7 +61,7 @@ nav img {
 }
 
 header.shrink .imgsnavbar img {
-    width: 15%;
+    width: 40px;
     transition: transform 1.7s ease, 1.7s ease;
 }
 
@@ -275,12 +276,10 @@ footer {
     .menu {
         display: flex; /* Display the menu button on smaller screens */
         background-color: transparent;
-        
-        position: absolute;
-      
+        width: 30px;
+        position: absolute;    
         z-index: 3; /* Set a higher z-index to ensure it's on top of the navbar */
         opacity: 1; /* Initially set the opacity to 1 */
-        width: 80px; /* Set the initial width to the desired value */
         transition: width 1.7s ease, opacity 1.7s ease; /* Add transition for width and opacity */
     }
 
@@ -318,12 +317,12 @@ footer {
     }
 
     .menu svg {
-        width: 70%; /* Adjust the width of the SVG icon */
+        width: 30px; /* Adjust the width of the SVG icon */
         height: auto; /* Maintain aspect ratio */
     }
     header.shrink .menu {
         transition: width 1.7s ease, opacity 1.7s ease;
-        width: 10%;
+    width: 20px;
     }
 }
 
@@ -399,7 +398,7 @@ footer {
 
     nav img.stretched-logo {
         display: inline;
-        width: 75px;
+        width: 100px;
         height: auto;
         padding: 5px; /* Adjust the padding as needed */
         display: block; /* Ensure block display for margin:auto to work */
