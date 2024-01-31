@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.querySelector('.menu');
     const navList = document.querySelector('nav ul');
     const navItems = document.querySelectorAll('nav ul li');
+    const header = document.querySelector("header");
 
     menuButton.addEventListener('click', function () {
         navList.classList.toggle('show');
@@ -46,22 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var header = document.querySelector("header");
-    var imgsnavbar = document.querySelector(".imgsnavbar");
-    var navlist = document.querySelector(".navlist");
 
     window.addEventListener("scroll", function () {
         if (window.pageYOffset > 0) {
             header.classList.add("shrink");
-            imgsnavbar.classList.add("shrink");
-            navlist.classList.add("shrink");
+            menuButton.classList.add("shrink");
+            navList.classList.add("shrink");
         } else {
             header.classList.remove("shrink");
-            imgsnavbar.classList.remove("shrink");
-            navlist.classList.remove("shrink");
+            menuButton.classList.remove("shrink");
+            navList.classList.remove("shrink");
         }
     });
 });
