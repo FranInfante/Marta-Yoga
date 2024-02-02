@@ -173,6 +173,7 @@ main .intro h2 {
 }
 
 .container {
+    margin-top: 80px;
     width: 100%;
     overflow: hidden;
 }
