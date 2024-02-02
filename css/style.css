@@ -213,25 +213,26 @@ main .intro h2 {
 
 /* Keyframes for the slide animation */
 @keyframes slide {
-    0%, 20% {
+    0%, 10% {
         transform: translateX(0%);
     }
 
-    25%, 45% {
+    20%, 30% {
         transform: translateX(-25%);
     }
 
-    50%, 70% {
+    40%, 50% {
         transform: translateX(-50%);
     }
 
-    75%, 95% {
+    60%, 70% {
         transform: translateX(-75%);
     }
-
-    100%, 120% {
-        transform: translateX(-100%);
+    80%, 100% {
+        transform: translateX(0%);
     }
+
+
 }
 
 
