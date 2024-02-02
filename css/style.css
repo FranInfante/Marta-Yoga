@@ -543,13 +543,6 @@ nav ul li.active {
     stroke-width: 6;
 }
 
-.spacer{
-
-height: 10000px;
-
-}
-
-/* Add these styles to your CSS to customize the services section */
 .services {
     text-align: center;
     padding: 50px 0;
@@ -572,14 +565,44 @@ height: 10000px;
     align-items: center;
 }
 
-.service-images img {
-    width: 20%; /* Adjust the width of each service image as needed */
+.service-item {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease; /* Add transition for a smooth effect */
 }
 
-.service-images img:hover {
+.service-item img {
+    width: auto%; /* Adjust the image width to fill its container */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.services-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service-item:hover {
     transform: scale(1.1); /* Increase the size on hover for a subtle effect */
 }
+
+.service-item:hover .services-label {
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust the background color on hover */
+}
+
