@@ -172,67 +172,67 @@ main .intro h2 {
     margin-top: 30px;
 }
 
-/* Container styles */
 .container {
     width: 100%;
     overflow: hidden;
 }
 
-/* Wrapper styles for animation */
 .wrapper {
-    width: 100%;
+    width: 400%;
     display: flex;
-    animation: slide 16s infinite;
+    animation: slide 30s infinite;
     justify-content: flex-start;
     z-index: 1;
 }
 
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
 /* Keyframes for the slide animation */
 @keyframes slide {
-    0%{
+    0%, 20% {
         transform: translateX(0%);
     }
 
-    15%{
-        transform: translateX(0%);
+    25%, 45% {
+        transform: translateX(-25%);
     }
 
-    30%{
+    50%, 70% {
+        transform: translateX(-50%);
+    }
+
+    75%, 95% {
+        transform: translateX(-75%);
+    }
+
+    100%, 120% {
         transform: translateX(-100%);
-    }
-
-    45%{
-        transform: translateX(-100%);
-    }
-
-    60%{
-        transform: translateX(-200%);
-    }
-
-    75%{
-        transform: translateX(-200%);
-    }
-
-    90%{
-        transform: translateX(-300%);
-    }
-
-    105%{
-        transform: translateX(-300%);
-    }
-
-    120%{
-        transform: translateX(-400%);
-    }
-
-    135%, 150%{
-        transform: translateX(-400%);
-    }
-
-    200%{
-        transform: translateX(0%); /* Return to the first slide at the end */
     }
 }
+
 
 
 
