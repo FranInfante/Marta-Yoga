@@ -117,7 +117,7 @@ main {
 main .intro {
     display: flex;
     justify-content: center;
-    margin-bottom: 150px;
+    margin-bottom: 3%;
     margin-top: 3%;
 }
 
@@ -175,7 +175,6 @@ main .intro h2 {
 /* Container styles */
 .container {
     width: 100%;
-    height: auto;
     overflow: hidden;
 }
 
@@ -190,26 +189,55 @@ main .intro h2 {
 
 /* Keyframes for the slide animation */
 @keyframes slide {
-    0% {
-        transform: translateX(0);
+    0%{
+        transform: translateX(0%);
     }
 
-    25% {
+    15%{
+        transform: translateX(0%);
+    }
+
+    30%{
         transform: translateX(-100%);
     }
 
-    50% {
+    45%{
+        transform: translateX(-100%);
+    }
+
+    60%{
         transform: translateX(-200%);
     }
 
-    75% {
+    75%{
+        transform: translateX(-200%);
+    }
+
+    90%{
         transform: translateX(-300%);
     }
 
-    100% {
-        transform: translateX(0); /* Return to the first slide at the end */
+    105%{
+        transform: translateX(-300%);
+    }
+
+    120%{
+        transform: translateX(-400%);
+    }
+
+    135%, 150%{
+        transform: translateX(-400%);
+    }
+
+    200%{
+        transform: translateX(0%); /* Return to the first slide at the end */
     }
 }
+
+
+
+
+
 
 /* Image styles */
 img {
@@ -509,4 +537,39 @@ nav ul li.active {
 
 height: 10000px;
 
+}
+
+/* Add these styles to your CSS to customize the services section */
+.services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Change the background color as needed */
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+.service-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-images img {
+    width: 20%; /* Adjust the width of each service image as needed */
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Add transition for a smooth effect */
+}
+
+.service-images img:hover {
+    transform: scale(1.1); /* Increase the size on hover for a subtle effect */
 }
