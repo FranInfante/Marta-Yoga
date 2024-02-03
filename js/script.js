@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.querySelector('.menu');
-    const navList = document.querySelector('nav ul');
+    const navList = document.querySelector('.navlist');
     const navItems = document.querySelectorAll('nav ul li');
     const header = document.querySelector("header");
 
