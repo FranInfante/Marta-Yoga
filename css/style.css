@@ -577,7 +577,7 @@ nav ul li.active {
 }
 
 .service-item img {
-    width: auto%; /* Adjust the image width to fill its container */
+    width: auto; /* Adjust the image width to fill its container */
     height: 100%; /* Maintain aspect ratio */
     border-radius: 10px;
 }
