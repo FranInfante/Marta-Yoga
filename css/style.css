@@ -1,14 +1,21 @@
-html{
+html {
 
-font-size: 62.5%;
-scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 
 }
 
-.container{
+.container {
 
-margin: 0 auto;
-max-width: 80;
+    margin: 0 auto;
+    max-width: 80%;
+
+}
+
+.container-lg {
+
+    margin: 0 auto;
+    max-width: 90%;
 
 }
 
@@ -31,16 +38,17 @@ header {
     border-bottom: #333 1px solid;
     position: fixed;
     width: 100%;
-    transition: background-color 1.0s ease, height 1.0s ease; /* Add transition for height */
+    transition: background-color 1.0s ease, height 1.0s ease;
     justify-content: center;
     align-items: center;
-    display: flex;
     z-index: 2;
-    height: 80px;
+    padding: 0.6rem 0;
 }
+
 header .imgsnavbar {
     width: 40%;
-    transition: width 1.7s ease; /* Only transition width property */
+    transition: width 1.7s ease;
+    
 }
 
 /* Styles for the header when it shrinks */
@@ -48,7 +56,6 @@ header.shrink {
     height: 60px;
     border-bottom: 0px;
     background-color: transparent;
-     /* Adjust the height as needed */
 }
 
 /* Styles for the images and links in the header */
@@ -56,43 +63,40 @@ header.shrink {
 
 /* Navigation styles */
 nav {
-    height: 80%; /* Match the height with the header in the .shrink state */
     display: flex;
-    align-items: center; /* Center the li elements vertically */
-    
+    align-items: center;
     transition: margin-left 1.0s ease;
 }
 
 
 /* Styles for navigation images */
 nav img {
-    width: 35%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 25rem;
     max-height: 100%;
     height: auto;
     object-fit: cover;
     transition: transform 1.7s ease, width 1.7s ease;
-    margin:0 auto;
 }
 
 header.shrink .imgsnavbar {
     width: 30%;
+    transition: width 1.7s ease;
 }
 
 /* Styles for navigation ul (unordered list) */
 nav ul {
     list-style-type: none;
     display: flex;
-    align-items: center; /* Center the li elements vertically */
-    width: 700px;
-    transition: max-height 0.9s ease, width 0.7s ease, opacity 0.7s ease 0.2s, margin 1.7s ease; /* Added smooth transition for margin */
+    align-items: center;
+    transition: max-height 0.9s ease, width 0.7s ease, opacity 0.7s ease 0.2s, margin 1.7s ease;
+    gap: 6rem;
+    left: 0;;
 }
 
 nav ul li {
     display: inline-block;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 20%; /* Adjust the margin for spacing between list items */
 }
 
 /* Styles for navigation list items */
@@ -104,20 +108,22 @@ nav ul li a {
     font-weight: bolder;
     font-style: normal;
     font-size: 18px;
-    transition: transform 1.7s ease, width 1.7s ease, font-size 1.7s ease, opacity 1.7s ease; /* Add font-size transition */
+    transition: transform 1.7s ease, width 1.7s ease, font-size 1.7s ease, opacity 1.7s ease;
+    /* Add font-size transition */
 }
 
-/*Styling for the .show in navlist*/ 
+/*Styling for the .show in navlist*/
 
 nav.show .navlist{
 
     max-height: 500px;
-    width: 100%; 
+    width: 100%;
 
 }
+
 .nav.show li {
     display: block;
-    opacity: 1; 
+    opacity: 1;
 }
 
 /* Header shrink state for list items */
@@ -163,7 +169,6 @@ main .intro img {
 main .intro .text-content {
     max-width: 50%;
     padding: 20px;
-    margin-right: 5%;
     justify-content: center;
 }
 
@@ -180,7 +185,7 @@ main .intro h1 {
 
 /* Styles for the introductory paragraph */
 main .intro p {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 20px;
@@ -215,7 +220,7 @@ main .intro h2 {
     width: 100%;
 }
 
-.img-gallery {
+.img-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -230,45 +235,49 @@ main .intro h2 {
     width: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3vw; /* Responsive font size */
-    text-shadow: 0.5vw 0.5vw 0.5vw #333; /* Responsive text shadow */
-    font-family: 'Rubik', sans-serif; 
+    font-size: 3vw;
+    /* Responsive font size */
+    text-shadow: 0.5vw 0.5vw 0.5vw #333;
+    /* Responsive text shadow */
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
-    -webkit-text-stroke: 0.13vw rgb(93, 40, 2); /* Responsive text stroke */
+    -webkit-text-stroke: 0.13vw rgb(93, 40, 2);
+    /* Responsive text stroke */
     white-space: nowrap;
 }
-    
+
 
 
 /* Keyframes for the slide animation */
 @keyframes slide {
-    0%, 10% {
+
+    0%,
+    10% {
         transform: translateX(0%);
     }
 
-    20%, 30% {
+    20%,
+    30% {
         transform: translateX(-25%);
     }
 
-    40%, 50% {
+    40%,
+    50% {
         transform: translateX(-50%);
     }
 
-    60%, 70% {
+    60%,
+    70% {
         transform: translateX(-75%);
     }
-    80%, 100% {
+
+    80%,
+    100% {
         transform: translateX(0%);
     }
 
 
 }
-
-
-
-
-
-
 
 /* Image styles */
 img {
@@ -304,27 +313,33 @@ footer {
 
 
 /* Larger screen navigation styles */
-@media screen and (min-width: 1121px) {
+@media screen and (min-width: 1250px) {
     nav {
-        height: 80%;
         display: flex;
         align-items: center;
         margin-left: 2%;
-        transition: margin-left 1.0s ease; /* Add transition for margin-left */
+        transition: margin-left 1.0s ease;
+        /* Add transition for margin-left */
+        justify-content: center;
     }
 
     nav .shrink {
 
         margin-left: 10%;
-        
+
     }
 
-    nav div.imgsnavbar .regulara{
+    nav div.imgsnavbar .regulara {
 
         width: 40%;
-        margin-left: 20%;
-        
-        }
+
+    }
+    
+    .menu{
+        display: none;
+    }
+
+
     .menu svg {
         display: none;
     }
@@ -347,47 +362,64 @@ footer {
     }
 }
 
-@media screen and (max-width: 1120px) {
+/*Smaller screens*/
+@media screen and (max-width: 1250px) {
     .menu {
-        display: flex; /* Display the menu button on smaller screens */
+        display: flex;
+        /* Display the menu button on smaller screens */
         background-color: transparent;
-        width: 30px;
-        position: absolute;    
-        z-index: 3; /* Set a higher z-index to ensure it's on top of the navbar */
-        opacity: 1; /* Initially set the opacity to 1 */
+        max-width: 8rem;
+        width: 100%;
+        opacity: 1;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        top: 3.5rem;
+        z-index: 3;
+        right: 6rem;
+        position: absolute;
     }
+
+
+    
+
 
     nav ul {
         margin-right: 0;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 45px;
-        width: 100%; /* Set the desired width */
+        top: 12.5rem;
+        width: 100%;
+        /* Set the desired width */
         background-color: white;
         z-index: 1;
         overflow: hidden;
         max-height: 0;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        /* Added box shadow */
     }
 
-    
+
     nav ul li {
         display: inline-block;
         text-align: center;
         margin: 8px 10px;
-        opacity: 1; /* Initially set the opacity to 0 */
+        opacity: 1;
+        /* Initially set the opacity to 0 */
     }
 
-    
+
 
     .menu svg {
-        width: 30px; /* Adjust the width of the SVG icon */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: 100%;
     }
+
     header.shrink .menu {
         transition: width 1.7s ease, opacity 1.7s ease;
-    width: 20px;
+        width: 100%;
+        max-width: 6rem;
     }
 }
 
@@ -395,6 +427,24 @@ footer {
 
 /* Nav styles for even smaller screens */
 @media screen and (max-width: 1000px) {
+
+   nav.shrink .imgsnavbar img{
+
+    width: 7rem;
+
+   }
+
+   body.shrink header {
+
+    background-color: transparent;
+    border: 0;
+   }
+
+   nav.shrink .menu{
+
+width: 5rem;
+
+   }
 
 
     main .intro {
@@ -413,8 +463,10 @@ footer {
         margin: auto;
         padding: 5%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border: none; /* Ensure no border */
-        padding: 0; /* Ensure no padding */
+        border: none;
+        /* Ensure no border */
+        padding: 0;
+        /* Ensure no padding */
     }
 
     main .intro .text-content {
@@ -437,7 +489,7 @@ footer {
         font-size: 17px;
         margin-top: 20px;
     }
-   
+
 
     nav ul li {
         display: block;
@@ -448,40 +500,46 @@ footer {
 }
 
 /* Nav styles for hiding elements in dropdown menu */
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1250px) {
     nav {
         display: flex;
-        align-items: center; /* Align items vertically */
-        justify-content: center; /* Add space between items */
-       
+        align-items: center;
         overflow: hidden;
+        justify-content: center;
     }
-   
+
     nav img.regular-logo {
         display: none;
     }
 
     nav img.stretched-logo {
         display: inline;
-        width: 100px;
+        width: 10rem;
         height: auto;
-        padding: 5px; /* Adjust the padding as needed */
-        display: block; /* Ensure block display for margin:auto to work */
+        padding: 5px;
+        display: block;
     }
-    header.shrink .imgsnavbar {
-        width: 30% /* Adjust the width as needed for the shrink state */
+
+    nav div.imgsnavbar {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
-    
-    
+
+
     nav ul.show {
-        max-height: 500px; /* Adjust the max-height to fit your content */
+        max-height: 500px;
+        /* Adjust the max-height to fit your content */
     }
 }
 
 /* Show regular logo and li when more than 1120px */
-@media screen and (min-width: 1121px) {
+@media screen and (min-width: 1250px) {
     nav ul {
-        display: flex !important; /* Override the display property */
+        display: flex !important;
+        /* Override the display property */
     }
 
     nav ul li {
@@ -500,29 +558,21 @@ footer {
 
 /* Add a new class for the active state */
 nav ul li.active {
-    background-color: #8b735b; /* Set the background color for the active state */
-    color: #fff; /* Set the text color for the active state */
+    background-color: #8b735b;
+    /* Set the background color for the active state */
+    color: #fff;
+    /* Set the text color for the active state */
 }
 
 
-.menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 3; /* Set a higher z-index to ensure it's on top of the navbar */
-}
+
 
 .line {
     fill: none;
     stroke: black;
     stroke-width: 6;
     transition: stroke-dasharray 800ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 800ms cubic-bezier(0.4, 0, 0.2, 1);
+        stroke-dashoffset 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line1 {
@@ -561,7 +611,8 @@ nav ul li.active {
 .services {
     text-align: center;
     padding: 50px 0;
-    background-color: #f9f9f9; /* Change the background color as needed */
+    background-color: #f9f9f9;
+    /* Change the background color as needed */
 }
 
 .services h2 {
@@ -590,10 +641,11 @@ nav ul li.active {
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; /* Add transition for a smooth effect */
+    transition: transform 0.3s ease;
+    /* Add transition for a smooth effect */
 }
 
-.service-item img{
+.service-item img {
 
     object-fit: cover;
     width: 100%;
@@ -618,11 +670,13 @@ nav ul li.active {
 }
 
 .service-item:hover {
-    transform: scale(1.1); /* Increase the size on hover for a subtle effect */
+    transform: scale(1.1);
+    /* Increase the size on hover for a subtle effect */
 }
 
 .service-item:hover .services-label {
-    background-color: rgba(0, 0, 0, 0.9); /* Adjust the background color on hover */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Adjust the background color on hover */
 }
 
 @media screen and (max-width: 900px) {
@@ -636,38 +690,42 @@ nav ul li.active {
         border-radius: 10px;
         margin: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease; /* Add transition for a smooth effect */
+        transition: transform 0.3s ease;
+        /* Add transition for a smooth effect */
     }
-    
-}
-
-
-.location .container h2{
-
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 28px;
-margin-bottom: 20px;
-font-family: 'Raleway', sans-serif;
-font-optical-sizing: auto;
-font-weight: bolder;
-font-style: normal;
-transition: color 0.3s ease;
 
 }
+
+
+.location .container h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
+
+}
+
 .location .container iframe {
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
     height: 40rem;
-    margin-left: 20%;
-    display: block; 
+    display: block;
     border: none;
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; /* Add transition for a smooth effect */
+    transition: transform 0.3s ease;
+    /* Add transition for a smooth effect */
+    margin: 0 auto;
 }
 
-.location .container p{
+.location .container p {
 
     font-size: 18px;
     line-height: 1.5;
@@ -677,10 +735,10 @@ transition: color 0.3s ease;
     font-weight: bolder;
     font-style: normal;
     transition: color 0.3s ease;
-    width:auto;
+    width: auto;
     display: flex;
     align-items: center;
-    width: 60rem;
+    max-width: 60rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-optical-sizing: auto;
     font-weight: bolder;
@@ -689,13 +747,28 @@ transition: color 0.3s ease;
 
 }
 
-.location-content{
+.container .location-content {
 
-display: flex;
-gap: 15rem;
-max-width: 80%;
-margin: 0 auto;
-
+    display: flex;
+    gap: 15rem;
 
 }
 
+@media screen and (max-width: 1000px) {
+
+    .container .location-content {
+
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+    }
+
+    .location .container p {
+
+        display: flex;
+        font-size: 1.5rem;
+
+    }
+
+}
