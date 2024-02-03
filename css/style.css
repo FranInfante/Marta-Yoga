@@ -1,6 +1,7 @@
 html{
 
 font-size: 62.5%;
+scroll-behavior: smooth;
 
 }
 
@@ -632,3 +633,62 @@ nav ul li.active {
     }
     
 }
+
+
+.location h2{
+
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 28px;
+margin-bottom: 20px;
+font-family: 'Raleway', sans-serif;
+font-optical-sizing: auto;
+font-weight: bolder;
+font-style: normal;
+transition: color 0.3s ease;
+
+}
+.location iframe {
+    width: 40rem;
+    height: 40rem;
+    margin-left: 20%;
+    display: block; 
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Add transition for a smooth effect */
+}
+
+.location p{
+
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
+    width:auto;
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
+
+}
+
+.location-content{
+
+display: flex;
+gap: 15rem;
+max-width: 80%;
+margin: 0 auto;
+
+
+}
+
