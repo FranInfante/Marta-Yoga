@@ -246,6 +246,23 @@ main .intro h2 {
     white-space: nowrap;
 }
 
+nav.shrink .imgsnavbar img{
+
+    width: 7rem;
+
+   }
+
+   body.shrink header {
+
+    background-color: transparent;
+    border: 0;
+   }
+
+   nav.shrink .menu{
+
+width: 5rem;
+
+   }
 
 
 /* Keyframes for the slide animation */
@@ -416,11 +433,6 @@ footer {
         height: 100%;
     }
 
-    header.shrink .menu {
-        transition: width 1.7s ease, opacity 1.7s ease;
-        width: 100%;
-        max-width: 6rem;
-    }
 }
 
 
@@ -428,23 +440,7 @@ footer {
 /* Nav styles for even smaller screens */
 @media screen and (max-width: 1000px) {
 
-   nav.shrink .imgsnavbar img{
-
-    width: 7rem;
-
-   }
-
-   body.shrink header {
-
-    background-color: transparent;
-    border: 0;
-   }
-
-   nav.shrink .menu{
-
-width: 5rem;
-
-   }
+   
 
 
     main .intro {
