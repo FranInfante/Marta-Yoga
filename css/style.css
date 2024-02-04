@@ -247,7 +247,7 @@ main .intro h2 {
 
 nav.shrink .imgsnavbar img.stretched-logo{
 
-    width: 7rem;
+    width: 4rem;
 
    }
    nav.shrink .imgsnavbar img.regular-logo{
@@ -263,7 +263,7 @@ nav.shrink .imgsnavbar img.stretched-logo{
    }
 
    body.shrink .menu {
-    max-width: 5rem;
+    max-width: 4rem;
     
 }
 
@@ -387,15 +387,15 @@ footer {
     .menu {
         display: flex;
         background-color: transparent;
-        max-width: 8rem;
+        max-width: 6rem;
         width: 100%;
         opacity: 1;
         border: none;
         cursor: pointer;
         display: flex;
-        top: 3.5rem;
+        top: 2.5rem;
         z-index: 3;
-        right: 6rem;
+        right: 4rem;
         position: absolute;
         transition: max-width 1.7s ease;
 
@@ -410,7 +410,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 12.5rem;
+        top: 9.5rem;
         width: 100%;
         /* Set the desired width */
         background-color: white;
@@ -425,7 +425,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 8rem;
+        top: 6rem;
         width: 100%;
         /* Set the desired width */
         background-color: white;
@@ -451,6 +451,10 @@ footer {
         width: 100%;
         height: 100%;
     }
+
+
+    
+    
 
 }
 
@@ -529,7 +533,7 @@ footer {
 
     nav img.stretched-logo {
         display: inline;
-        width: 10rem;
+        width: 7rem;
         height: auto;
         padding: 5px;
         display: block;
@@ -690,6 +694,12 @@ nav ul li.active {
     /* Adjust the background color on hover */
 }
 
+.location{
+
+margin-bottom: 7rem;
+
+}
+
 @media screen and (max-width: 900px) {
 
     .service-item {
@@ -772,7 +782,11 @@ nav ul li.active {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
-
+    }
+    .container .location-content iframe {
+       width: 100%;
+       max-width: 25rem;
+       max-height: 25rem;
     }
 
     .location .container p {
@@ -781,5 +795,37 @@ nav ul li.active {
         font-size: 1.5rem;
 
     }
+    
 
+}
+ 
+.form {
+    padding: 2rem;
+    border: 1px solid black;
+    max-width: 40rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
