@@ -10,14 +10,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
    
 
-    window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 0) {
-            nav.classList.add("shrink");
-            body.classList.add("shrink");
-        } else {
-            nav.classList.remove("shrink");
-            body.classList.remove("shrink");
-        }
-    });
+    let lastScrollPosition = 0;
+
+window.addEventListener("scroll", function () {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down
+        nav.classList.add("shrink");
+        body.classList.add("shrink");
+    } else {
+        // Scrolling up
+        nav.classList.remove("shrink");
+        body.classList.remove("shrink");
+    }
+
+    lastScrollPosition = currentScrollPosition;
+});
 });
 
