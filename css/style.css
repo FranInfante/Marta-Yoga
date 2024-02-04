@@ -262,11 +262,10 @@ nav.shrink .imgsnavbar img.stretched-logo{
     border: 0;
    }
 
-   nav.shrink .menu{
-
-width: 5rem;
-
-   }
+   body.shrink .menu {
+    max-width: 5rem;
+    
+}
 
 
 /* Keyframes for the slide animation */
@@ -387,7 +386,6 @@ footer {
 @media screen and (max-width: 1250px) {
     .menu {
         display: flex;
-        /* Display the menu button on smaller screens */
         background-color: transparent;
         max-width: 8rem;
         width: 100%;
@@ -399,6 +397,8 @@ footer {
         z-index: 3;
         right: 6rem;
         position: absolute;
+        transition: max-width 1.7s ease;
+
     }
 
 
