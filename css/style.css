@@ -53,9 +53,9 @@ header .imgsnavbar {
 
 /* Styles for the header when it shrinks */
 header.shrink {
-    height: 60px;
     border-bottom: 0px;
     background-color: transparent;
+    transition: transform 1.7s ease;
 }
 
 /* Styles for the images and links in the header */
@@ -72,7 +72,7 @@ nav {
 /* Styles for navigation images */
 nav img {
     width: 100%;
-    max-width: 25rem;
+    max-width: 30rem;
     max-height: 100%;
     height: auto;
     object-fit: cover;
@@ -80,8 +80,7 @@ nav img {
 }
 
 header.shrink .imgsnavbar {
-    width: 30%;
-    transition: width 1.7s ease;
+    transition: transform 1.7s ease;
 }
 
 /* Styles for navigation ul (unordered list) */
@@ -246,9 +245,14 @@ main .intro h2 {
     white-space: nowrap;
 }
 
-nav.shrink .imgsnavbar img{
+nav.shrink .imgsnavbar img.stretched-logo{
 
     width: 7rem;
+
+   }
+   nav.shrink .imgsnavbar img.regular-logo{
+
+    width: 20rem;
 
    }
 
