@@ -192,6 +192,7 @@ main .intro p {
     font-weight: bold;
 }
 
+
 /* Styles for the secondary heading within the introductory section */
 main .intro h2 {
     font-size: 24px;
@@ -768,6 +769,7 @@ margin-bottom: 7rem;
 
 }
 
+
 .container .location-content {
 
     display: flex;
@@ -775,7 +777,7 @@ margin-bottom: 7rem;
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1350px) {
 
     .container .location-content {
 
@@ -798,9 +800,27 @@ margin-bottom: 7rem;
     
 
 }
- 
+
+.contact{
+
+display: flex;
+justify-content: center;
+
+}
+
+.formcontacto{
+
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+max-width: 60rem;
+
+
+}
+
 .form {
-    padding: 2rem;
+    padding: 3rem;
     border: 1px solid black;
     max-width: 40rem;
     font-family: 'Raleway', sans-serif;
@@ -828,4 +848,46 @@ button {
     border: none;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
+}
+
+.socials{
+
+width: 100%;
+max-width: 40rem;
+
+
+}
+
+
+.socials .container h2{
+
+font-size: 1.8rem;
+margin-bottom: 20px;
+font-family: 'Raleway', sans-serif;
+font-optical-sizing: auto;
+font-weight: bolder;
+font-style: normal;
+transition: color 0.3s ease;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.icons{
+width: 100%;
+max-width: 40rem;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+}
+
+
+.icons a img{
+
+width: 100%;
+max-width: 20rem;
+
 }
