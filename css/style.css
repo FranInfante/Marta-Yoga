@@ -2,6 +2,7 @@ html {
 
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background-color: #fbebcf;
 
 }
 
@@ -22,7 +23,7 @@ html {
 /* Reset default styles for the body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+   
     color: #333;
     margin: 0;
     padding: 0;
@@ -89,8 +90,7 @@ nav ul {
     display: flex;
     align-items: center;
     transition: max-height 0.9s ease, width 0.7s ease, opacity 0.7s ease 0.2s, margin 1.7s ease;
-    gap: 6rem;
-    left: 0;;
+    gap: 2rem;
 }
 
 nav ul li {
@@ -199,7 +199,7 @@ main .intro h2 {
 }
 
 .gallery {
-    margin-top: 80px;
+    margin-top: 13rem;
     width: 100%;
     overflow: hidden;
 }
@@ -529,10 +529,7 @@ footer {
     }
 
 
-    nav ul.show {
-        max-height: 500px;
-        /* Adjust the max-height to fit your content */
-    }
+    
 }
 
 /* Show regular logo and li when more than 1120px */
@@ -611,7 +608,6 @@ nav ul li.active {
 .services {
     text-align: center;
     padding: 50px 0;
-    background-color: #f9f9f9;
     /* Change the background color as needed */
 }
 
