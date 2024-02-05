@@ -1,165 +1,95 @@
-Funcionalidades de la web 
-(lo que permite hacer como cliente viendo la pagina)
+# Marta's Yoga Studio
 
-Horario y Días de Clases en una Semana:
-Mostrar un calendario semanal con los horarios de las clases.
-Servicios Ofrecidos:
-Detallar los tipos de clases que ofrece, incluyendo yoga prenatal.
-Informar sobre servicios adicionales como clases grabadas, clases privadas y reservas en grupo.
-Conoce a los Profesionales:
-Perfil detallado de Marta, incluyendo su experiencia, certificaciones y filosofía de enseñanza.
-Newsletter de Eventos:
-Permitir que los visitantes se suscriban a un boletín de noticias para recibir actualizaciones sobre eventos, charlas y novedades.
-Galería de Fotos y Videos:
-Mostrar imágenes y videos de clases anteriores, eventos y charlas.
-Blog o Sección de Noticias:
-Publicar artículos sobre temas relevantes y mantener a los visitantes informados.
-Sistema de Reservas en Línea:
-Facilitar a los clientes la reserva y pago en línea de clases.
-Testimonios:
-Compartir experiencias positivas de alumnos anteriores.
-Preguntas Frecuentes (FAQ):
-Responder a preguntas comunes sobre clases, eventos y servicios.
-Sección de Recursos:
-Proporcionar enlaces a recursos útiles relacionados con el yoga y la fisioterapia.
-Redes Sociales:
-Enlaces a perfiles de redes sociales para mantenerse conectado con la comunidad.
-Calendario de Eventos:
-Mostrar un calendario interactivo con todas las clases, charlas y eventos programados.
-Chat en Vivo o Formulario de Contacto (Contacto por teléfono):
-Permitir a los visitantes hacer preguntas en tiempo real o enviar consultas a través de un formulario.
-Área de Descargas:
-Ofrecer descargas gratuitas como guías, meditaciones u otros recursos.
-Programas Especiales o Paquetes:
-Describir programas especiales, descuentos o paquetes para clases múltiples.
-Recordatorios de Clases:
-Enviar recordatorios automáticos por correo electrónico a los estudiantes inscritos.
-Formulario de Inscripción y Evaluación:
-Recolectar información de nuevos estudiantes y obtener retroalimentación.
-Integración con Plataformas de Pago:
-Facilitar el pago en línea para reservas y servicios adicionales.
-Traducciones:
-Proporcionar traducciones a diferentes idiomas para llegar a un público más amplio.
-```
-Marta-Yoga
-├─ css
-│  └─ style.css
-├─ imgs
-│  ├─ cuatro.jpg
-│  ├─ dos.jpg
-│  ├─ Foto Marta Infante.jpeg
-│  ├─ Logosimple.png
-│  ├─ Logoynombre.png
-│  ├─ tres.jpg
-│  └─ uno.JPG
-├─ js
-│  └─ script.js
-├─ pages
-│  └─ index.html
-└─ README.md
+![Marta's Yoga Studio](imgs/Logoynombre.png)
 
-```
-```
-Marta Yoga
-├─ css
-│  └─ style.css
-├─ imgs
-│  ├─ Carousel
-│  │  ├─ cuatro.JPG
-│  │  ├─ dos.JPG
-│  │  ├─ tres.JPG
-│  │  └─ uno.JPG
-│  ├─ Foto Marta Infante.jpeg
-│  ├─ icon
-│  │  └─ icons8-yoga-16.png
-│  ├─ Logosimple.png
-│  ├─ Logoynombre.png
-│  ├─ Services
-│  │  ├─ group.jpg
-│  │  ├─ individual.jpg
-│  │  ├─ physio.jpg
-│  │  └─ theraputic.jpg
-│  └─ Socials
-│     ├─ insta.png
-│     └─ whatsapp.png
-├─ index.html
-├─ js
-│  └─ script.js
-├─ php
-│  └─ process_form.php
-├─ PHPMailer
-│  ├─ .editorconfig
-│  ├─ COMMITMENT
-│  ├─ composer.json
-│  ├─ get_oauth_token.php
-│  ├─ language
-│  │  ├─ phpmailer.lang-af.php
-│  │  ├─ phpmailer.lang-ar.php
-│  │  ├─ phpmailer.lang-as.php
-│  │  ├─ phpmailer.lang-az.php
-│  │  ├─ phpmailer.lang-ba.php
-│  │  ├─ phpmailer.lang-be.php
-│  │  ├─ phpmailer.lang-bg.php
-│  │  ├─ phpmailer.lang-bn.php
-│  │  ├─ phpmailer.lang-ca.php
-│  │  ├─ phpmailer.lang-cs.php
-│  │  ├─ phpmailer.lang-da.php
-│  │  ├─ phpmailer.lang-de.php
-│  │  ├─ phpmailer.lang-el.php
-│  │  ├─ phpmailer.lang-eo.php
-│  │  ├─ phpmailer.lang-es.php
-│  │  ├─ phpmailer.lang-et.php
-│  │  ├─ phpmailer.lang-fa.php
-│  │  ├─ phpmailer.lang-fi.php
-│  │  ├─ phpmailer.lang-fo.php
-│  │  ├─ phpmailer.lang-fr.php
-│  │  ├─ phpmailer.lang-gl.php
-│  │  ├─ phpmailer.lang-he.php
-│  │  ├─ phpmailer.lang-hi.php
-│  │  ├─ phpmailer.lang-hr.php
-│  │  ├─ phpmailer.lang-hu.php
-│  │  ├─ phpmailer.lang-hy.php
-│  │  ├─ phpmailer.lang-id.php
-│  │  ├─ phpmailer.lang-it.php
-│  │  ├─ phpmailer.lang-ja.php
-│  │  ├─ phpmailer.lang-ka.php
-│  │  ├─ phpmailer.lang-ko.php
-│  │  ├─ phpmailer.lang-lt.php
-│  │  ├─ phpmailer.lang-lv.php
-│  │  ├─ phpmailer.lang-mg.php
-│  │  ├─ phpmailer.lang-mn.php
-│  │  ├─ phpmailer.lang-ms.php
-│  │  ├─ phpmailer.lang-nb.php
-│  │  ├─ phpmailer.lang-nl.php
-│  │  ├─ phpmailer.lang-pl.php
-│  │  ├─ phpmailer.lang-pt.php
-│  │  ├─ phpmailer.lang-pt_br.php
-│  │  ├─ phpmailer.lang-ro.php
-│  │  ├─ phpmailer.lang-ru.php
-│  │  ├─ phpmailer.lang-si.php
-│  │  ├─ phpmailer.lang-sk.php
-│  │  ├─ phpmailer.lang-sl.php
-│  │  ├─ phpmailer.lang-sr.php
-│  │  ├─ phpmailer.lang-sr_latn.php
-│  │  ├─ phpmailer.lang-sv.php
-│  │  ├─ phpmailer.lang-tl.php
-│  │  ├─ phpmailer.lang-tr.php
-│  │  ├─ phpmailer.lang-uk.php
-│  │  ├─ phpmailer.lang-vi.php
-│  │  ├─ phpmailer.lang-zh.php
-│  │  └─ phpmailer.lang-zh_cn.php
-│  ├─ LICENSE
-│  ├─ README.md
-│  ├─ SECURITY.md
-│  ├─ src
-│  │  ├─ DSNConfigurator.php
-│  │  ├─ Exception.php
-│  │  ├─ OAuth.php
-│  │  ├─ OAuthTokenProvider.php
-│  │  ├─ PHPMailer.php
-│  │  ├─ POP3.php
-│  │  └─ SMTP.php
-│  └─ VERSION
-└─ README.md
+Welcome to Marta's Yoga Studio, where we offer a variety of yoga classes to help you achieve physical and mental well-being. Marta Infante, our experienced instructor, combines her background in physiotherapy with her passion for yoga to provide a holistic approach to health and wellness.
 
-```
+## Table of Contents
+- [Functionalities](#functionalities)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Functionalities
+### 1. Horario y Días de Clases en una Semana
+   - View a weekly calendar showcasing class schedules.
+
+### 2. Servicios Ofrecidos
+   - Explore various types of classes, including prenatal yoga.
+   - Learn about additional services like recorded classes, private sessions, and group reservations.
+
+### 3. Conoce a los Profesionales
+   - Discover detailed profiles of our instructor, Marta, including her experience, certifications, and teaching philosophy.
+
+### 4. Newsletter de Eventos
+   - Subscribe to our newsletter for updates on events, talks, and news.
+
+### 5. Galería de Fotos y Videos
+   - View images and videos from past classes, events, and talks.
+
+### 6. Blog o Sección de Noticias
+   - Read articles on relevant topics to stay informed.
+
+### 7. Sistema de Reservas en Línea
+   - Easily reserve and pay for classes online.
+
+### 8. Testimonios
+   - Read positive experiences shared by previous students.
+
+### 9. Preguntas Frecuentes (FAQ)
+   - Find answers to common questions about classes, events, and services.
+
+### 10. Sección de Recursos
+    - Access links to useful resources related to yoga and physiotherapy.
+
+### 11. Redes Sociales
+    - Connect with us through social media to stay engaged with the community.
+
+### 12. Calendario de Eventos
+    - View an interactive calendar displaying all scheduled classes, talks, and events.
+
+### 13. Chat en Vivo o Formulario de Contacto
+    - Interact with us in real-time or submit queries through a contact form.
+
+### 14. Área de Descargas
+    - Download free resources such as guides and meditations.
+
+### 15. Programas Especiales o Paquetes
+    - Learn about special programs, discounts, or class packages.
+
+### 16. Recordatorios de Clases
+    - Receive automatic email reminders for enrolled students.
+
+### 17. Formulario de Inscripción y Evaluación
+    - Provide information for new student registration and offer feedback.
+
+### 18. Integración con Plataformas de Pago
+    - Facilitate online payments for reservations and additional services.
+
+### 19. Traducciones
+    - Access translations in different languages to reach a wider audience.
+
+## Getting Started
+To get started with Marta's Yoga Studio, visit our [website](#) and explore the various functionalities to enhance your yoga journey.
+
+## Features
+- **Responsive Design:** Our website is designed to provide an optimal viewing experience across various devices.
+- **Interactive Elements:** Engage with interactive calendars, forms, and social media links.
+- **Media Gallery:** Enjoy visual content through a gallery of images and videos.
+
+## Usage
+1. Visit the [website](#).
+2. Explore the different sections to discover our services, schedule, and more.
+3. Subscribe to our newsletter for regular updates.
+
+## Contributing
+We welcome contributions to improve our website. Feel free to submit issues or pull requests.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+&copy; 2024 Marta's Yoga Studio. All rights reserved.
