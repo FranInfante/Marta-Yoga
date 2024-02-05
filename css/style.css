@@ -1031,6 +1031,12 @@ max-width: 10rem;
             }
   
   }
+  .prices{
+    
+    margin-bottom: 5rem;
+
+
+  }
 
   .price-table {
     width: 100%;/* You need to specify a value for max-width, e.g., max-width: 500px; */
