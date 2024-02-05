@@ -27,14 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email_message .= "Email: $email\n\n";
     $email_message .= "Message:\n$message";
 
-    // Set additional headers
-    $headers = "From: $email";
-
     // Send the email using PHPMailer
     $mail = new PHPMailer(true);
 
     try {
-        //Server settings
+        // Server settings
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Change this to your SMTP server
         $mail->SMTPAuth = true;
@@ -43,21 +40,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->SMTPSecure = 'tls'; // Change this to 'ssl' or 'tls' based on your server
         $mail->Port = 587; // Change this to your SMTP port
 
-        //Recipients
+        // Recipients
         $mail->setFrom($email, $name);
         $mail->addAddress($to);
 
-        //Content
+        // Content
         $mail->isHTML(false);
         $mail->Subject = $subject;
         $mail->Body = $email_message;
 
         $mail->send();
-        echo "Email sent successfully!";
-    } catch (Exception $e) {
-        echo "Failed to send email. Error: {$mail->ErrorInfo}";
-    }
 
+        // Set a session variable for success
+        session_start();
+        $_SESSION['email_sent'] = true;
+
+        // Redirect to email.html
+        header("Location: ../email.php");
+        exit();
+    } catch (Exception $e) {
+        // Set a session variable for error
+        session_start();
+        $_SESSION['email_sent'] = false;
+        $_SESSION['error_message'] = "Failed to send email. Error: {$mail->ErrorInfo}";
+
+        // Redirect to email.html
+        header("Location: ../email.php");
+        exit();
+    }
 }
 ?>
-
