@@ -1046,13 +1046,15 @@ max-width: 10rem;
     font-style: normal;
     transition: color 0.3s ease;
     font-size: 1.8rem;
-
+    border: 3px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
 
 .price-table th{
     height: 5rem;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 1rem;
 }
 
