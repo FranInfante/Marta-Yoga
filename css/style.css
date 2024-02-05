@@ -197,6 +197,11 @@ main .intro p {
 main .intro h2 {
     font-size: 24px;
     margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    transition: color 0.3s ease;
 }
 
 .gallery {
@@ -496,6 +501,7 @@ footer {
 
     main .intro h1 {
         font-size: 25px;
+       
     }
 
     main .intro p {
@@ -1027,11 +1033,49 @@ max-width: 10rem;
   
   }
 
-  .price-table{
-
-
+  .price-table {
     border: 1px black solid;
-    width: 100%;
-    max-width: ;
+    width: 100%;/* You need to specify a value for max-width, e.g., max-width: 500px; */
+    max-width: 1000px;
+    margin: 0 auto;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
 
-  }
+.price-table th {
+    border: 1px black solid;
+    text-align: center; /* Center the content horizontally */
+}
+
+.price-table tr {
+    border: 1px black solid;
+}
+
+.price-table td {
+    border: 1px black solid;
+}
+
+.price-table .price{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+
+}
+.price-table .classes{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-weight: 604;
+    font-style: normal;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+
+}
