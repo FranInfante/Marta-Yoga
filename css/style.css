@@ -1040,7 +1040,7 @@ max-width: 10rem;
 
   .price-table {
     width: 100%;/* You need to specify a value for max-width, e.g., max-width: 500px; */
-    max-width: 40rem;
+    max-width: 60rem;
     margin: 0 auto;
     font-optical-sizing: auto;
     font-style: normal;
