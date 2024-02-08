@@ -1053,12 +1053,16 @@ max-width: 10rem;
 
 
 
+
 .price-table th{
     border: 2px solid black;
     border-radius: 1rem;
     text-align: center;
     padding: 2rem;
 }
+
+
+
 .price-table caption {
 
     align-items: center;
@@ -1097,6 +1101,7 @@ max-width: 10rem;
 
 .tables{
     gap: 2rem;
+    display: flex;
 
 }
 @media screen and (max-width: 1100px){
