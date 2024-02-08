@@ -724,7 +724,7 @@ margin-bottom: 6rem;
 }
 
 
-.location .container h2 {
+.container h2 {
 
     display: flex;
     align-items: center;
@@ -1039,7 +1039,7 @@ max-width: 10rem;
   }
 
   .price-table {
-    width: 100%;/* You need to specify a value for max-width, e.g., max-width: 500px; */
+    width: 100%;
     max-width: 60rem;
     margin: 0 auto;
     font-optical-sizing: auto;
@@ -1052,17 +1052,18 @@ max-width: 10rem;
 }
 
 
+
 .price-table th{
-    height: 5rem;
     border: 2px solid black;
     border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
 }
-
 .price-table caption {
 
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 2rem;
     font-family: 'Raleway', sans-serif;
     font-optical-sizing: auto;
@@ -1072,15 +1073,7 @@ max-width: 10rem;
 
 }
 
-.price-table th {
-    text-align: center; /* Center the content horizontally */
-}
 
-.price-table tr{
-
-    height: 3rem;
-
-}
 
 
 .price-table .price{
@@ -1102,21 +1095,32 @@ max-width: 10rem;
 
 }
 
-.separator-row td{
-    height: 2rem; /* Adjust the height for separation */
-}
+.tables{
+    gap: 2rem;
 
-@media screen and (max-width: 650px){
+}
+@media screen and (max-width: 1100px){
 
     .price-table {
-        width: 100%;/* You need to specify a value for max-width, e.g., max-width: 500px; */
+        width: 100%;
         max-width: 30rem;
         margin: 0 auto;
         font-optical-sizing: auto;
         font-style: normal;
         transition: color 0.3s ease;
         font-size: 1.3rem;
+        display: flex;
     
     }
+    
+   
+
+    .tables{
+        gap: 3rem;
+        display: flex;
+        flex-direction:column;
+        
+        }
 
 }
+
