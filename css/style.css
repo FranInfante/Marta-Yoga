@@ -1134,6 +1134,7 @@ max-width: 10rem;
     color: #f18e1e; /* Set the text color */
     font-weight: bold; /* Make the text bold, adjust as needed */
     transition: color 0.3s ease; /* Add a smooth color transition on hover */
+    font-size: 2rem;
 }
 
 .top:hover {
